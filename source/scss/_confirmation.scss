@@ -1,0 +1,88 @@
+.order_details {
+    .order_paragraph {
+        font-size: 18px;
+        color: $primary-color;
+        margin-bottom: 35px;
+    }
+    .billing-title {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.3em;
+        margin-bottom: 15px;
+        border-color: #dddddd;
+    }
+    .confirmation-card {
+        padding: 38px;
+        background: #f1f6f7;
+        td:last-child {
+            color: $title-color;
+            padding-left: 25px;
+        }
+    }
+    .order_details_table {
+        background: #f1f6f7;
+        padding: 30px;
+        margin-top: 75px;
+        @media (min-width: 767px) {
+            margin-top: 45px;
+        }
+        h2 {
+            color: $title-color;
+            font-size: 18px;
+            padding-bottom: 15px;
+        }
+        table {
+            margin-bottom: 0;
+            thead {
+                th {
+                    border-bottom: 1 px solid #dddddd;
+                    font-size: 16px;
+                    font-family: $title-font;
+                    font-weight: normal;
+                    color: $title-color;
+                }
+            }
+            tbody {
+                tr {
+                    @media (max-width: 1000px) {
+                        &:last-child {
+                            height: 50px;
+                        }
+                    }
+                    td {
+                        border: 0;
+                        p {
+                            margin-bottom: 0;
+                            color: #777777;
+                        }
+                        h5 {
+                            font-family: $text-font;
+                            color: $title-color;
+                            margin-bottom: 0;
+                            font-size: 15px;
+                            font-weight: 500;
+                            text-transform: capitalize;
+                        }
+                        h4 {
+                            font-family: $text-font;
+                            text-transform: uppercase;
+                            margin-bottom: 0;
+                            color: $title-color;
+                            font-size: 15px;
+                            font-weight: 500;
+                        }
+                    }
+                    &:last-child {
+                        td {
+                            border-top: 1px solid #ddd;
+                            padding-bottom: 0;
+                            p {
+                                color: $title-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,179 @@
+.single-post-area {
+    .social-links {
+        padding-top: 10px;
+        li {
+            display: inline-block;
+            margin-bottom: 10px;
+            a {
+                color: #cccccc;
+                padding: 7px;
+                font-size: 14px;
+                transition: all 0.2s linear;
+                &:hover {
+                    color: $title-color;
+                }
+            }
+        }
+    }
+    .blog_details {
+        padding-top: 26px;
+        p {
+            margin-bottom: 10px;
+        }
+    }
+    .quotes {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding: 24px 35px 24px 30px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: -20.84px 21.58px 30px 0px rgba(176, 176, 176, 0.1);
+        font-size: 14px;
+        line-height: 24px;
+        color: #777777;
+        font-style: italic;
+    }
+    .arrow {
+        position: absolute;
+        .lnr {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+    .navigation-area {
+        border-top: 1px solid #eee;
+        padding-top: 30px;
+        margin-top: 60px;
+        p {
+            margin-bottom: 0px;
+        }
+        h4 {
+            font-size: 18px;
+            line-height: 25px;
+            color: $title-color;
+        }
+        .nav-left {
+            text-align: left;
+            .thumb {
+                margin-right: 20px;
+                background: #000;
+                img {
+                    transition: all 0.3s ease 0s;
+                }
+            }
+            .lnr {
+                margin-left: 20px;
+                opacity: 0;
+                transition: all 0.3s ease 0s;
+            }
+            &:hover {
+                .lnr {
+                    opacity: 1;
+                }
+                .thumb {
+                    img {
+                        opacity: .5;
+                    }
+                }
+            }
+            @media(max-width:767px) {
+                margin-bottom: 30px;
+            }
+        }
+        .nav-right {
+            text-align: right;
+            .thumb {
+                margin-left: 20px;
+                background: #000;
+                img {
+                    transition: all 0.3s ease 0s;
+                }
+            }
+            .lnr {
+                margin-right: 20px;
+                opacity: 0;
+                transition: all 0.3s ease 0s;
+            }
+            &:hover {
+                .lnr {
+                    opacity: 1;
+                }
+                .thumb {
+                    img {
+                        opacity: .5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.comments-area {
+    background: #fafaff;
+    border: 1px solid #eee;
+    padding: 50px 30px;
+    margin-top: 50px;
+    @media (max-width: 991px) {
+        padding: 50px 8px;
+    }
+    h4 {
+        text-align: center;
+        margin-bottom: 50px;
+        color: $title-color;
+        font-size: 18px;
+    }
+    h5 {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    a {
+        color: $title-color;
+    }
+    .comment-list {
+        padding-bottom: 48px;
+        &:last-child {
+            padding-bottom: 0;
+        }
+        &.left-padding {
+            padding-left: 25px;
+        }
+        @media (max-width: 413px) {
+            .single-comment {
+                h5 {
+                    font-size: 12px;
+                }
+                .date {
+                    font-size: 11px;
+                }
+                .comment {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .thumb {
+        margin-right: 20px;
+    }
+    .date {
+        font-size: 13px;
+        color: #cccccc;
+        margin-bottom: 13px;
+    }
+    .comment {
+        color: #777777;
+        margin-bottom: 0;
+    }
+    .btn-reply {
+        background-color: #fff;
+        color: $title-color;
+        padding: 5px 18px;
+        font-size: 12px;
+        display: block;
+        font-weight: 400;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            background-color: $primary-color;
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+}

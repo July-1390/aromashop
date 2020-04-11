@@ -1,0 +1,154 @@
+.header_area {
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+    transition: background 0.4s, all 0.3s linear;
+    box-shadow: 0px 10px 27px 3px rgba(221, 221, 221, 0.3);
+    .navbar {
+        background: transparent;
+        padding: 0px;
+        border: 0px;
+        border-radius: 0px;
+        .nav {
+            .nav-item {
+                margin-right: 45px;
+                .nav-link {
+                    text-transform: capitalized;
+                    color: $title-color;
+                    display: inline-block;
+                    @media (min-width: 991px) {
+                        padding: 32px 0;
+                    }
+                    &:after {
+                        display: none;
+                    }
+                }
+                &:hover,
+                &:active {
+                    .nav-link {
+                        color: $primary-color;
+                    }
+                }
+                &.submenu {
+                    position: relative;
+                    ul {
+                        border: none;
+                        padding: 0px;
+                        border-radius: 0px;
+                        box-shadow: none;
+                        margin: 0px;
+                        background: #fff;
+                        @media (min-width: 992px) {
+                            position: absolute;
+                            top: 120%;
+                            left: 0px;
+                            min-width: 200px;
+                            text-align: left;
+                            opacity: 0;
+                            transition: all 300ms ease-in;
+                            visibility: hidden;
+                            display: block;
+                            border: none;
+                            padding: 0px;
+                            border-radius: 0px;
+                        }
+                        &:before {
+                            content: "";
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 10px 10px 0 10px;
+                            border-color: #eeeeee transparent transparent transparent;
+                            position: absolute;
+                            right: 24px;
+                            top: 45px;
+                            z-index: 3;
+                            opacity: 0;
+                            transition: all 400ms linear;
+                        }
+                        .nav-item {
+                            display: block;
+                            float: none;
+                            margin-right: 0px;
+                            border-bottom: 1px solid #ededed;
+                            margin-left: 0px;
+                            transition: all 0.4s linear;
+                            .nav-link {
+                                line-height: 45px;
+                                color: $title-color;
+                                padding: 0px 30px;
+                                transition: all 150ms linear;
+                                display: block;
+                                margin-right: 0px;
+                            }
+                            &:last-child {
+                                border-bottom: none;
+                            }
+                            &:hover {
+                                .nav-link {
+                                    background: $primary-color;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        ul {
+                            @media (min-width: 992px) {
+                                visibility: visible;
+                                opacity: 1;
+                                top: 100%;
+                            }
+                            .nav-item {
+                                margin-top: 0px;
+                            }
+                        }
+                    }
+                }
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+        .search {
+            font-size: 12px;
+            line-height: 60px;
+            display: inline-block;
+            color: $title-color;
+            i {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.nav-shop {
+    li {
+        display: inline-block;
+        margin-right: 15px;
+        i,
+        span {
+            font-size: 16px;
+        }
+        button {
+            padding: 0;
+            border: 0;
+            background: transparent;
+            position: relative;
+            .nav-shop__circle {
+                font-size: 9px;
+                display: inline-block;
+                background: $primary-color;
+                color: #fff;
+                padding: 0px 5px;
+                border-radius: 50%;
+                position: absolute;
+                top: -8px;
+                right: -12px;
+            }
+        }
+        &::last-child {
+            margin-left: 40px;
+        }
+    }
+}
