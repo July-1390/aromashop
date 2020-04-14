@@ -177,3 +177,58 @@
         }
     }
 }
+
+.comment-form {
+    background: #fafaff;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 47px 30px 43px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    h4 {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 18px;
+        line-height: 22px;
+        color: $title-color;
+    }
+    .name {
+        padding-left: 0;
+        @media (max-width: 767px) {
+            padding-right: 0;
+            margin-bottom: 1rem;
+        }
+    }
+    .email {
+        padding-right: 0;
+        @media (max-width: 991px) {
+            padding-left: 0;
+        }
+    }
+    .form-control {
+        padding: 8px 20px;
+        background: #fff;
+        border: none;
+        width: 100%;
+        font-size: 14px;
+        color: #777777;
+        &:focus {
+            box-shadow: none;
+            border: 1px solid #eee;
+        }
+        &::placeholder {
+            color: #777777;
+        }
+    }
+    textarea {
+        &.form-control {
+            height: 140px;
+            resize: none;
+        }
+    }
+    .button-postComment {
+        border-radius: 4px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+}
