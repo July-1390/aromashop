@@ -377,6 +377,16 @@
     }
     .contact_form {
         margin-top: 15px;
+        textarea {
+            min-height: 150px;
+        }
+    }
+    .form-control {
+        height: 46px;
+        background: transparent;
+        border: 1px solid #EEEEEE;
+        font-size: 14px;
+        color: #999999;
     }
     .primary-btn {
         line-height: 38px;
@@ -389,15 +399,5 @@
             color: $white;
             background: $primary-color;
         }
-    }
-}
-
-.form-review {
-    .form-control {
-        height: 46px;
-        background: transparent;
-        border: 1px solid #EEEEEE;
-        font-size: 14px;
-        color: #999999;
     }
 }
