@@ -46,6 +46,11 @@
         color: $title-color;
         border-color: #eeeeee;
     }
+    &-account {
+        padding: 7px 42px;
+        background: transparent;
+        border-color: #fff;
+    }
     &:hover {
         border-color: $primary-color;
         color: $title-color;
